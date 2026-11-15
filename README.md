@@ -1,4 +1,4 @@
-# ons-forecast
+# ons_forecast
 
 Forecasting daily peak electricity demand for Brazil's National Interconnected System (SIN), using open data from ONS.
 
@@ -77,7 +77,7 @@ Parquet wins on size, speed and typing. It does not fix the publisher's padded c
 ## Repository structure
 
 ```
-ons-forecast/
+ons_forecast/
 ├── data/raw/                     # files as downloaded from ONS (small, committed)
 ├── sql/
 │   ├── 00_raw_csv.sql            # the only format-specific step
@@ -246,8 +246,8 @@ Stated up front, not buried.
 ## Running it
 
 ```bash
-git clone https://github.com/dogeraldi05/ons-forecast.git
-cd ons-forecast
+git clone https://github.com/dogeraldi05/ons_forecast.git
+cd ons_forecast
 
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
